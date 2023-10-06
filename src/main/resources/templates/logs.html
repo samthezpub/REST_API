@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logs</title>
+</head>
+<body>
+    <table>
+        <tr th:each="log: ${logs}">
+            <td th:text = "${log.id}"></td>
+            <td th:text = "${log.level}"></td>
+            <td th:text = "${log.message}"></td>
+            <td th:text = "${log.src}"></td>
+        </tr>
+    </table>
+</body>
+</html>
